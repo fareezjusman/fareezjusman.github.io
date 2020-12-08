@@ -1,5 +1,5 @@
 window.onload = function () {
-  //window.onload scripts tag dekat head tag
+  //window.onload --> scripts tag dekat head tag
   let video = document.getElementById("myVideo");
 
   let playBtn = document.getElementById("playBtn");
@@ -13,7 +13,10 @@ window.onload = function () {
   });
 
   let freezeBtn = document.getElementById("freezeBtn");
-  freezeBtn.addEventListener("click", function () {
-    video.freeze();
+  freezeBtn.addEventListener("mousedown", function () {
+    video.pause();
+  });
+  freezeBtn.addEventListener("mouseup", function () {
+    video.play();
   });
 };
