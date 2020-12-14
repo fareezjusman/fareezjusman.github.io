@@ -12,6 +12,8 @@ function getRandomUser() {
       let elAddress = document.getElementById("address");
       let elEmail = document.getElementById("email");
 
+      elFirstName.innerHTML = data.result[0].name.first;
+
       elJsonResult.innerHTML = this.response;
     }
   };
