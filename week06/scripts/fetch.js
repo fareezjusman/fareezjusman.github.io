@@ -25,11 +25,10 @@ function GetBookings() {
     });
 }
 
-let getBookingBBtn = document
-  .getElementById("getBooking")
-  .addEventListener("click", function () {
-    GetBookings();
-  });
+let getBookingBtn = document.getElementById("getBooking");
+getBookingBtn.addEventListener("click", function () {
+  GetBookings();
+});
 
 function BookNow(guestName, guestEmail, guestPax) {
   let url =
@@ -52,18 +51,17 @@ function BookNow(guestName, guestEmail, guestPax) {
     .then((json) => {
       // Do something with object
       //console.log(json.booking);
-
-      let bookMsg = document.getElementById("BookMsg");
-      bookMsg.innerHTML = json.booking.name + " added !";
+      let bookMsg = document.getElementById("bookMsg");
+      bookMsg.innerHTML = json.booking.name + " added!";
       GetBookings();
     });
 }
 
 let bookNow = document.getElementById("bookNow");
 bookNow.addEventListener("click", function () {
-  let gname = document.getElementById("guestName").value;
-  let gemail = document.getElementById("guestEmail").value;
-  let gpax = document.getElementById("guestPax").value;
+  let gName = document.getElementById("guestName").value;
+  let gEmail = document.getElementById("guestEmail").value;
+  let gPax = document.getElementById("guestPax").value;
 
-  BookNow(gname, gemail, gpax);
+  BookNow(gName, gEmail, gPax);
 });
