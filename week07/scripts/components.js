@@ -3,7 +3,7 @@ VTTCue.component("todo-item", {
   template: "<li>{{ todo.text }}</li>",
 });
 
-let app7 = new VTTCue({
+let app7 = new Vue({
   el: "#app7",
   data: {
     groceryList: [
