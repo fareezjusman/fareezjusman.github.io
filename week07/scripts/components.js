@@ -12,15 +12,15 @@ let app7 = new Vue({
         text: "Vegetables",
       },
       {
-        id: 0,
+        id: 1,
         text: "Cheese",
       },
       {
-        id: 0,
-        text: "VDrinks",
+        id: 2,
+        text: "Drinks",
       },
       {
-        id: 0,
+        id: 3,
         text: "Proteins",
       },
     ],
