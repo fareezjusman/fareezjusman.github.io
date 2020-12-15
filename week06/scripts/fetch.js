@@ -54,7 +54,7 @@ function BookNow(guestName, guestEmail, guestPax) {
       //console.log(json.booking);
 
       let bookMsg = document.getElementById("BookMsg");
-      bookMsg.innerHTML = json.bookings.name + " added !";
+      bookMsg.innerHTML = json.booking.name + " added !";
       GetBookings();
     });
 }
