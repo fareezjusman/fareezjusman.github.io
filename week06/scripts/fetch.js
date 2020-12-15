@@ -51,7 +51,7 @@ function BookNow(guestName, guestEmail, guestPax) {
       //console.log(json.booking);
 
       let bookMsg = document.getElementById("BookMsg");
-      bookMsg.innerHTML = json.booking.name + " added !";
+      bookMsg.innerHTML = json.bookings.name + " added !";
       GetBookings();
     });
 }
@@ -62,5 +62,5 @@ bookNow.addEventListener("click", function () {
   let gemail = document.getElementById("guestEmail").value;
   let gpax = document.getElementById("guestPax").value;
 
-  BookNow(gName, gEmail, gPax);
+  BookNow(gname, gemail, gpax);
 });
