@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1170px;
+  margin: auto;
+}
+header {
+  background: url(images/background1.jpg);
+}
