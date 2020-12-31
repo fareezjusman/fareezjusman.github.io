@@ -29,8 +29,8 @@ function BookNow(
   })
     .then((response) => response.json())
     .then((json) => {
-      // Do something with the data
-      alert(json.booking.name + " Your Booking is Confirmed!");
+      // Do something with object
+      alert(json.booking.name + " Your booking is added");
     });
 }
 
