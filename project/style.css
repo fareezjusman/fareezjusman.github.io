@@ -1,120 +1,108 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: "Poppins", sans-serif;
-}
-.wrapper {
-  width: 1170px;
-  margin: auto;
-}
-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/background1.jpg);
+.carousel-item {
   height: 100vh;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
+  min-height: 300px;
 }
-.nav-area {
-  float: right;
-  list-style: none;
-  margin-top: 30px;
+.carousel-caption {
+  bottom: 220px;
 }
-.nav-area li {
-  display: inline-block;
-}
-.nav-area li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 20px;
-  font-family: poppins;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-.nav-area li a:hover {
-  background: #fff;
-  color: #333;
-}
-.logo {
-  float: left;
-}
-.logo img {
-  width: 100%;
-  padding: 15px 0;
-}
-.welcome-text {
-  position: absolute;
-  width: 600px;
-  height: 300px;
-  margin: 20% 30%;
-  text-align: center;
-}
-.welcome-text h1 {
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
+.carousel-caption h5 {
   font-size: 60px;
-}
-.welcome-text h1 span {
-  color: #00fecb;
-}
-.welcome-text a {
-  border: 1px solid #fff;
-  padding: 10px 25px;
-  text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
-  margin-top: 20px;
+  letter-spacing: 10px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+  font-family: poppins;
+}
+.carousel-caption a {
+  text-transform: uppercase;
+  background: #262626;
+  padding: 10px 30px;
   display: inline-block;
   color: #fff;
+  margin-top: 15px;
 }
-.welcome-text a:hover {
+.navbar-nav a {
+  font-family: poppins;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-nav {
+  text-align: center;
+}
+.nav-link {
+  padding: 0.2rem 1rem;
+}
+.nav-link.active,
+.nav-link:focus {
+  color: #fff;
+}
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
   background: #fff;
-  color: #333;
 }
-/*resposive*/
-
-@media (max-width: 600px) {
-  .wrapper {
-    width: 100%;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(104, 90, 90);
+}
+.w-100 {
+  height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+  .navbar-nav.ml-auto {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
-  .logo {
-    float: none;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-  }
-  img {
-    width: 100%;
-  }
-  .nav-area {
-    float: none;
-    margin-top: 0;
-  }
-  .nav-area li a {
-    padding: 5px;
-    font-size: 11px;
-  }
-  .nav-area {
-    text-align: center;
-  }
-  .welcome-text {
-    width: 100%;
-    height: auto;
-    margin: 30% 0;
-  }
-  .welcome-text h1 {
-    font-size: 30px;
+  .navbar-nav a {
+    font-size: 14px;
+    font-weight: normal;
   }
 }
 
-.section3 {
-  width: 90%;
-  height: 60vh;
-  background-color: white;
-  margin: 2% 5%;
-  opacity: 0.9;
+[class*="col-"] {
+  padding: 1rem;
+}
+
+.col-lg-6 img {
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+.container-fluid {
+  background-color: #262626;
+}
+
+.welcome {
+  color: #fff;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+p,
+h5,
+h3 {
+  color: #fff;
 }

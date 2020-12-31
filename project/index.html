@@ -1,52 +1,255 @@
 <!DOCTYPE html>
-<!--Code by Divinector (www.divinectorweb.com)-->
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>How to Create responsive Homepage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">    
+	<meta charset="UTF-8">
+	<title>S P A C E | Home Page</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-		<div class="wrapper">
-			<div class="logo">
-				<a href="index.html">UpHill Restaurant</a>
-			</div>
-				<ul class="nav-area">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
+  <!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">S P A C E</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link active" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="menu.html">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="reservation.html">Booking</a>
+          </li>
+          <li class="nav-item">
+						<a class="nav-link" href="bookinglist.html">Booking List</a>
+					</li>
 				</ul>
-		</div>
-		<div class="welcome-text">
-			<h1>We are <span>Creative</span></h1>
-			<a href="#">Contact US</a>
-		</div>
-	</header>
-
-		<div class="section3">
-			<table style="width:90%; margin-left: 50px; text-align:center">
-			<caption style="border-bottom: 2px solid red">Reserve Your Table - Dine In</caption>
-			<tr width="300px" style="text-align:center">
-			 <td class="word">
-			 <p>Reserve your table with us.</p>
-			 <p>Enjoy your meal without any queue.</p>
-			 <p>Reserve your table now !!</p>
-			 </td>
-			 <td class="word"><p>Pick your Date :</p>
-			 <p><input type="date"><input type="submit"></p>
-			 <p>Time :</p>
-			 <p><input type="time"><input type="submit"></p>
-			 
-			 </td>
-			</tr>
-			</table>
-				 
 			</div>
+		</div>
+  </nav>
+  <!-- Caraousel Content -->
+	<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="First slide" class="d-block w-100" src="img/pexels-askar-abayev-5638748.jpg" style="filter: brightness(45%)">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated zoomIn" style="animation-delay: 1s">Restaurant</h5>
+					<p class="animated fadeInLeft" style="animation-delay: 1.5s">Perfect spot for your taste bud. Explore our variety of menus to try on.</p>
+					<p class="animated zoomIn" style="animation-delay: 2s"><a href="#">View Menu</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Second slide" class="d-block w-100" src="img/pexels-pixabay-262978.jpg" style="filter: brightness(45%)">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated zoomIn" style="animation-delay: 1s">Celebrate with us</h5>
+					<p class="animated fadeInLeft" style="animation-delay: 2s">Reserve your table with us. We accept any kind of event such as romantic dining, anniversary, birthday party and casual meeting.</p>
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Third slide" class="d-block w-100" src="img/pexels-karolina-grabowska-5718104.jpg" style="filter: brightness(45%)">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated zoomIn" style="animation-delay: 1s">About Us</h5>
+					<p class="animated fadeInLeft" style="animation-delay: 2s">View more on our background details.</p>
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
+				</div>
+			</div>
+		</div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+  </div>
+  
+  <!-- 1st section: Restaurant Info -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-5">Space restaurant</h1>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-12 col-lg-6">
+        <p>On the other hand, we denounce with righteous ralized by the charms of pleasure of the moment, pleasure of the moment so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. 
+          These cases are perfectly simple and easy to distinguish ralized by the charms of pleasure of the moment.</p>
+        <p>On a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain 
+          avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances.</p>
+        <p>On a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain 
+            avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances.</p>
+        <button class="btn btn-primary" style="float: right;">View More</button>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/pexels-mat-brown-1395964.jpg" class="img-fluid">
+      </div>
+    </div>
+  </div>
 
+  <!-- 2nd Section: Menu section -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-5">Our Menu</h1>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/salmon-dish-food-meal-46239.jpeg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Dinner</h4>
+            <p class="card-text">Chicken with perfect grill</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/salmon-dish-food-meal-46239.jpeg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Dinner</h4>
+            <p class="card-text">Chicken with perfect grill</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/salmon-dish-food-meal-46239.jpeg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Dinner</h4>
+            <p class="card-text">Chicken with perfect grill</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/salmon-dish-food-meal-46239.jpeg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Dinner</h4>
+            <p class="card-text">Chicken with perfect grill</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/salmon-dish-food-meal-46239.jpeg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Dinner</h4>
+            <p class="card-text">Chicken with perfect grill</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/salmon-dish-food-meal-46239.jpeg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Dinner</h4>
+            <p class="card-text">Chicken with perfect grill</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/salmon-dish-food-meal-46239.jpeg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Dinner</h4>
+            <p class="card-text">Chicken with perfect grill</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/salmon-dish-food-meal-46239.jpeg" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Dinner</h4>
+            <p class="card-text">Chicken with perfect grill</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary text-center" style="margin: auto;">View Menu</button>
+    </div>
+  </div>
+
+  <!-- 3rd Section: Booking section -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-5">Book Your Table</h1>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-12 col-lg-6">
+        <p>On the other hand, we denounce with righteous ralized by the charms of pleasure of the moment, pleasure of the moment so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. 
+          These cases are perfectly simple and easy to distinguish ralized by the charms of pleasure of the moment.</p>
+        <p>On a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain 
+          avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances.</p>
+        <p>On a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain 
+            avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances.</p>
+        <button class="btn btn-primary" style="float: right;">View More</button>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/pexels-mat-brown-1395964.jpg" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- 4th Section: footer section -->
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <hr class="light">
+          <h3>Contact Us</h3>
+          <hr>
+          <p>03-32101234</p>
+          <p>email@space.com</p>
+          <p>Jalan Angkasa, Petaling Jaya</p>
+          <p>Selangor</p>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h3>Operation Hours</h3>
+          <hr>
+          <p>Monday - Friday : 10.00am - 10.00pm</p>
+          <p>Saturday - Sunday : 10.00am - 11.30pm</p>
+
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h3>Delivery Services</h3>
+          <hr>
+          <p>Kuala Lumpur</p>
+          <p>Petaling Jaya</p>
+          <p>Subang Jaya</p>
+          <p>Shah Alam</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
 </body>
 </html>

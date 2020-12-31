@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>S P A C E | Bookinglist Page</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">S P A C E</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="menu.html">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="reservation.html">Booking</a>
+          </li>
+          <li class="nav-item">
+						<a class="nav-link active" href="bookinglist.html">Booking List</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+  </nav>
+
+
+  <!-- 3rd Section: Booking section -->
+  <div class="container-fluid padding" style="padding-top: 100px;">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-5">Booking List</h1>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+<!-- Booking List -->
+<button id="refreshList">Refresh</button>
+<div class="row" style="height: 300px;">
+	<div class="col">
+		<table class="table" id="booking-list">
+			<thead class="thead-light">
+				<tr>
+					<th scope="col">Id</th>
+					<th scope="col">Name</th>
+					<th scope="col">Email</th>
+					<th scope="col">Tel Number</th>
+					<th scope="col">Date</th>
+					<th scope="col">Number of Pax</th>
+					<th scope="col">Event</th>
+					<th scope="col">Remarks</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+</div>
+</div>
+
+  <!-- 4th Section: footer section -->
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <hr class="light">
+          <h3>Contact Us</h3>
+          <hr>
+          <p>03-32101234</p>
+          <p>email@space.com</p>
+          <p>Jalan Angkasa, Petaling Jaya</p>
+          <p>Selangor</p>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h3>Operation Hours</h3>
+          <hr>
+          <p>Monday - Friday : 10.00am - 10.00pm</p>
+          <p>Saturday - Sunday : 10.00am - 11.30pm</p>
+
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h3>Delivery Services</h3>
+          <hr>
+          <p>Kuala Lumpur</p>
+          <p>Petaling Jaya</p>
+          <p>Subang Jaya</p>
+          <p>Shah Alam</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
+</body>
+</html>
