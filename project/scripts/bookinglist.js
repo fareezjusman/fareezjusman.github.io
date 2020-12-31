@@ -61,7 +61,8 @@ window.addEventListener("load", function () {
 
 function DeleteBooking(id) {
   let url =
-    "https://api.sheety.co/21f68e939f7567bfd0d166e36b99e2c2/spaceApp/bookings/2";
+    "https://api.sheety.co/21f68e939f7567bfd0d166e36b99e2c2/spaceApp/bookings/" +
+    id;
   fetch(url, {
     method: "DELETE",
   }).then((response) => {
