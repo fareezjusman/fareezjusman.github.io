@@ -103,11 +103,6 @@
 
 p,
 h5,
-h3,
-label {
+h3 {
   color: #fff;
-}
-
-.form-group {
-  color: black;
 }
