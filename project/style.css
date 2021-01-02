@@ -101,15 +101,9 @@
   letter-spacing: 10px;
 }
 
-* {
-  color: white;
-}
-
-.card-title,
-.card-text {
-  color: black;
-}
-
-.booking-list {
-  color: black;
+p,
+h5,
+h3,
+label {
+  color: #fff;
 }
