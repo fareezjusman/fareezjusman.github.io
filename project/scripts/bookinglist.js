@@ -22,7 +22,7 @@ function GetBookings() {
         let gPhone = json.bookings[i].phone;
         let gDate = json.bookings[i].date;
         let gPax = json.bookings[i].pax;
-        let gEvent = json.bookings[i].event;
+        let gEvent = json.bookings[i].event1;
         let gRemarks = json.bookings[i].remarks;
         let buttonId = "delete" + gId;
 
