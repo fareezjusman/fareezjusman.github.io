@@ -8,7 +8,8 @@ function BookNow(
   guestRemarks
 ) {
   let url =
-    "https://api.sheety.co/21f68e939f7567bfd0d166e36b99e2c2/bookingApp/bookings";
+    "https://api.sheety.co/21f68e939f7567bfd0d166e36b99e2c2/spaceApp/bookings";
+
   let body = {
     booking: {
       name: guestName,
@@ -20,16 +21,19 @@ function BookNow(
       remarks: guestRemarks,
     },
   };
+
   fetch(url, {
     method: "POST",
     body: JSON.stringify(body),
     headers: {
-      "Content-Type": "application/json",
+      "content-Type": "application/json",
     },
   })
     .then((response) => response.json())
     .then((json) => {
-      alert(json.booking.name + " added!");
+      // Do something with the data
+      //console.log(json.bookings);
+      alert(json.booking.name + " Your booking is added");
     });
 }
 
