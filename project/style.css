@@ -112,7 +112,6 @@ label {
   color: black;
 }
 
-hr {
-  color: #fff;
-  font-weight: 600;
+hr .line1 {
+  border-top: 1px solid rgb(140, 136, 136);
 }
