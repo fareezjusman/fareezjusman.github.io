@@ -111,3 +111,8 @@ label {
 .card-text {
   color: black;
 }
+
+hr {
+  color: #fff;
+  font-weight: 600;
+}
